@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sure G | Login</title>
+    <title>Sure G | Sign Up</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -34,13 +34,27 @@
 
                         <div class="card">
                             <div class="card-body">
+
                                 <form method="post" id="auth-form" action="">
+
                                     <!--Header-->
                                     <div class="form-header default-color card-header">
-                                        <h4><i class="fa fa-lock"></i> Login</h4>
+                                        <h4><i class="fa fa-user-plus"></i> Sign Up</h4>
                                     </div>
 
                                     <!--Body-->
+                                    <div class="md-form">
+                                        <div class="input-group form-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-user prefix grey-text icon-login"></i>
+                                            </span>
+
+                                            <input type="text" id="defaultForm-name" class="form-control" required placeholder="Your name">
+                                            <!-- <label for="defaultForm-email">Your email</label> -->
+
+                                        </div>
+                                    </div>
+
                                     <div class="md-form">
                                         <div class="input-group form-group">
                                             <span class="input-group-addon">
@@ -64,7 +78,7 @@
                                     </div>
 
                                     <div class="text-center pt-4">
-                                        <button id="login-btn" class="btn btn-default waves-effect waves-light">Login</button>
+                                        <button id="signUp-btn" class="btn btn-default waves-effect waves-light">Sign Up</button>
                                     </div>
                                 </form>
 
@@ -73,7 +87,7 @@
                             <!--Footer-->
                             <div class="modal-footer">
                                 <div class="options">
-                                    <p>Not a member? <a href="sign-up.html">Sign Up</a></p>
+                                    <p>Already a member? <a href="sign-in.html">Sign In</a></p>
                                 </div>
                             </div>
 
