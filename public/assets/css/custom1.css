@@ -1,0 +1,36 @@
+.form-control, .form-group .form-control {
+    border: 0;
+    background-image: linear-gradient(#0D0030,#0D0030),linear-gradient(#D2D2D2,#D2D2D2);
+    background-size: 0 2px,100% 1px;
+}
+
+.form-group.is-focused .form-control {
+    outline: 0;
+    background-image: linear-gradient(#0D0030,#0D0030),linear-gradient(#D2D2D2,#D2D2D2);
+}
+
+a:focus, a:hover {
+    color: #0D0030;
+}
+
+.full-page.login-page .content {
+    background: #777777;
+}
+
+.footer2{
+    background: #777777;
+}
+
+.btn-sureG,
+.btn-sureG:hover,
+.btn-sureG:focus{
+    background-color: #0D0030;
+}
+.card-header{
+    background-color: #0D0030 !important;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(13,0,48,.4) !important;
+}
+
+.card-title{
+    color: #fff !important;
+}

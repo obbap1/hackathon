@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title Sure G | Login
+		meta(name='description', content='')
+		meta(name='keywords', content='')
+		meta(name='author', content='')
+		meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+		meta(name='viewport', content='width=device-width')
+		link(rel='icon', href='/assets/img/favicon.png')
+		link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet')
+		link(rel='stylesheet', href='/assets/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/assets/css/custom.css')
+		link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+	body(style='background: #777777')
+		section
+			.container
+				.text-center.pt-5
+					img(src='/assets/img/logo.png', alt='', style='max-width: 110px')
+				.row.mx-auto.justify-content-center.align-middle
+					section
+						.card
+							.card-body
+								form#auth-form(method='post', action='/users/login', enctype='urlencoded')
+									// Header
+									.form-header.default-color.card-header
+										h4
+											i.fa.fa-lock
+											|  Login
+									// Body
+									.md-form
+										.input-group.form-group
+											span.input-group-addon
+												i.fa.fa-envelope.prefix.grey-text.icon-login
+											input#defaultForm-email.form-control(name = 'email',type='email', required='', placeholder='Your email')
+											// <label for="defaultForm-email">Your email</label>
+									.md-form
+										.input-group.form-group
+											span.input-group-addon
+												i.fa.fa-lock.prefix.grey-text.icon-login
+											input#defaultForm-pass.form-control(name='password',type='password', required='', placeholder='Your password')
+											// <label for="defaultForm-pass">Your password</label>
+									.text-center.pt-4
+										button#login-btn.btn.btn-default.waves-effect.waves-light(type='submit') Login
+							// Footer
+							.modal-footer
+								.options
+									p
+										| Not a member? 
+										a(href='signup') Sign Up
+		// SCRIPTS
+		
+		script(src='/assets/js/jquery-3.2.1.min.js')
+		script(src='/assets/js/bootstrap.min.js')
