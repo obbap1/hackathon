@@ -1,0 +1,142 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    title Sure G
+    link(rel='stylesheet', href='/assets/font-awesome/css/font-awesome.css')
+    link(href='/assets/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/assets/css/mdb.min.css', rel='stylesheet')
+    link(href='/assets/css/helpers.css', rel='stylesheet')
+    link(href='/assets/css/custom.css', rel='stylesheet')
+  body.fixed-sn.white-skin
+    header
+      #slide-out.side-nav.sn-bg-4.fixed
+        ul.custom-scrollbar
+          li
+            .logo-wrapper.waves-light
+              a(href='#')
+                img.img-fluid.flex-center(src='/assets/img/logo.png')
+          li
+            form.search-form(role='search')
+              .form-group.md-form.mt-0.pt-1.waves-light
+                input.form-control(type='text', placeholder='Search')
+          li
+            a(href='index')
+              i.fa.fa-home.pr-2
+              | Home
+          li
+            ul.social
+          li
+            ul
+              li
+                a
+                  i.fa.fa-user-circle.pr-2
+                  |  My Music
+              li
+                a
+                  i.fa.fa-heart.pr-2
+                  |  Favourite Tracks
+              li
+                a
+                  i.fa.fa-list-ul.pr-2
+                  |  Playlist
+              li
+                ul.social
+                  li
+                    a.icons-sm.fb-ic(href='#')
+                      i.fa.fa-facebook(style='color: #fff')  
+                  li
+                    a.icons-sm.pin-ic(href='#')
+                      i.fa.fa-twitter(style='color: #fff')  
+                  li
+                    a.icons-sm.gplus-ic(href='#')
+                      i.fa.fa-instagram(style='color: #fff')  
+                  li
+                    a.icons-sm.tw-ic(href='#')
+                      i.fa.fa-snapchat(style='color: #fff')  
+        .sidenav-bg.mask-strong
+      nav.navbar.fixed-top.navbar-toggleable-md.navbar-expand-lg.scrolling-navbar.double-nav
+        .float-left
+          a.button-collapse.black-text(href='#', data-activates='slide-out')
+            i.fa.fa-bars
+        ul.nav.navbar-nav.nav-flex-icons.ml-auto
+          li.nav-item
+            a.nav-link(href="/users/signup")
+              i.fa.fa-user-plus
+              span.clearfix.d-sm-inline-block.nav-text Sign Up
+          li.nav-item
+            a.nav-link(href="/users/login")
+              i.fa.fa-sign-in
+              span.clearfix.d-sm-inline-block.nav-text Login
+          li.nav-item.dropdown
+            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              i.fa.fa-user-circle
+              span.nav-text My Account
+            .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownMenuLink')
+              a.dropdown-item(href='/users/logout')
+                | Log Out
+                i.fa.fa-sign-out.pl-5
+    main
+      .container-fluid
+        h4.font-weight-bold Browse
+        .row
+          .card.col-md-2.mr-lg-4
+            .card-body
+              h5.card-title Drake
+              h6.card-subtitle.mb-2.text-muted Love you more
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+          .card.col-md-2.mr-lg-4
+            .card-body
+              h5.card-title Drake
+              h6.card-subtitle.mb-2.text-muted Love you more
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+          .card.col-md-2.mr-lg-4
+            .card-body
+              h5.card-title Drake
+              h6.card-subtitle.mb-2.text-muted Love you more
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+          .card.col-md-2.mr-lg-4
+            .card-body
+              h5.card-title Drake
+              h6.card-subtitle.mb-2.text-muted Love you more
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+          .card.col-md-2.mr-lg-4
+            .card-body
+              h5.card-title Drake
+              h6.card-subtitle.mb-2.text-muted Love you more
+              a.card-link(href='#') Card link
+              a.card-link(href='#') Another link
+      .container
+        .row
+          .col-md-12.pt-lg-5.pt-5
+            .col-md-6
+            .col-md-12
+              // <div id="map"></div>
+              #map-canvas
+      div
+        span#textss.d-none
+          p Sure-G
+      .author
+        span#name.authorss
+      #tweeter
+        a#tweet(title='tweet this')
+          i.fa.fa-twitter
+    // /Main layout
+    // SCRIPTS
+    // JQuery
+script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBU8h4Y7swaDFEPvbarpDP8khi2RJp0kBw&callback=initMap')
+script(type='text/javascript', src='/assets/js/jquery-3.2.1.min.js')
+script(type='text/javascript', src='/assets/js/popper.min.js')
+script(type='text/javascript', src='/assets/js/bootstrap.min.js')
+script(type='text/javascript', src='/assets/js/mdb.min.js')
+script(type='text/javascript', src='/assets/js/custom.js')
+script.
+      // SideNav Initialization
+      $(".button-collapse").sideNav();
+      new WOW().init();
